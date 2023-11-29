@@ -1,0 +1,226 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #25334d;
+  color: #ffffff;
+}
+
+
+/* tarjeta de Twitter */
+.profile-container {
+  margin: 50px 70px auto;
+  width: 100px;
+}
+
+.profile-container .profile {
+}
+
+.profile-container .profile img {
+  border-radius: 50%;
+  border: 1px solid;
+  width: 70px;
+}
+
+.profile-container .profile .info {
+  display: none;
+  position: absolute;
+  width: 340px;
+  min-height: 300px;
+  max-height: 646px;
+  background-color: #222;
+  border-radius: 20px;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  flex-direction: column;
+  
+  margin-left: 40px;
+}
+.profile-container .profile:hover .info {
+  display: flex;
+  animation: show 0.3s ease;
+}
+.profile-container .profile a {
+  color: white;
+  text-decoration: none;
+}
+.profile-container .profile a:hover {
+  text-decoration: underline;
+}
+
+.profile-container .profile .info .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-container .profile .info .photo {
+}
+
+.profile-container .profile .info .photo img {
+}
+
+/* --------------------- */
+.profile-container .profile .action1 button {
+  min-width: 50px;
+  height: 35px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: transparent ;
+  color: white;
+  /* font-weight: bold;
+  border: none; */
+  cursor: pointer;
+  border: 1px solid;
+  margin-top: 13px;
+  margin-left: 90px;
+}
+
+.profile-container .profile .action2 button {
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  border-radius: 500%;
+  background-color: transparent ;
+  color: white;
+  /* font-weight: bold;
+  border: none; */
+  
+  cursor: pointer;
+  border: 1px solid;
+  margin-top: 13px;
+  
+}
+
+.profile-container .profile .action3 button {
+  min-width: 70px;
+  height: 35px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  
+  margin-top: 13px;
+  margin-left: 0px;
+}
+.profile-container .profile .action3 button:hover {
+  background-color: #eee;
+}
+
+/* --------------------- */
+.profile-container .profile .user-info {
+  padding: 10px 0;
+}
+
+.profile-container .profile .user-info .name {
+  font-weight: bold;
+}
+
+.profile-container .profile .user-info .username {
+  color: #aaa;
+}
+
+.profile-container .profile .description {
+  padding: 10px 0 20px 0;
+  flex: 1;
+}
+.profile-container .profile .description a {
+  color: rgb(0, 140, 255);
+  text-decoration: none;
+}
+
+.profile-container .profile .followers-container {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.profile-container .profile .followers-container a {
+  color: #aaa;
+}
+
+.profile-container .profile .followers-container .number {
+  font-weight: bold;
+  color: white;
+}
+
+.profile-container .profile .other {
+  padding: 10px 0;
+}
+
+.profile-container .profile .other a {
+  color: #999;
+  display: flex;
+  font-size: 13px;
+}
+
+.profile-container .profile .other a .photos {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  margin-right: 30px;
+}
+.profile-container .profile .other a .photos img {
+  margin-right: -16px;
+  border: solid 1px white ;
+  width: 32px;
+  height: 32px;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+  
+}
+
+.name{
+    font-size: 20px;
+}
+.description{
+    font-size: 13px;
+}
+.username{
+    font-size: 13px;
+}
+
+.icon{
+    display: flex;
+    color: #999;
+    font-size: 13px;
+    }
+/* ---- Final de la tarjeta de Twitter ----*/
+
+.rs{
+    margin: 50px;
+    font-size: 50px;
+}
+
+
+/* Media Queries */
+@media(max-width: 768px){
+
+   .rs{
+    margin: 15px;
+    font-size: 30px;
+}
+   
+    .profile-container .profile .info {
+        margin-left: 3px;
+    }
+    
+    .profile-container {
+  margin: 0px 10px;
+  width: 70px;
+}
+
+}
+
+
